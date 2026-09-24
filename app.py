@@ -6,6 +6,10 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return 'Hello World from Sara Shibu!'
 
+@app.route('/hello')
+def hello():
+    return 'Hello World from Sara Shibu!'
+
 @app.route('/about')
 def about():  # put application's code here
     return render_template('about.html')
