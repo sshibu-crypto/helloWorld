@@ -1,0 +1,49 @@
+/* Set the font for the entire webpage */
+body {
+    font-family: Arial, sans-serif;
+}
+/* General paragraph styling */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Level two heading styling */
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Special styling for the third paragraph */
+p#special {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-left: 4px solid black;
+}
+
+/* Class-based rule */
+.highlight {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Logo styling */
+img.logo {
+    width: 267px;
+    height: 72px;
+}
