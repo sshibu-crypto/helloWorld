@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74cc8e29-b266-4dbf-92ca-fbbd3c053f26" name="Changes" comment="changed table formatting">
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about-css.html" afterDir="false" />
+    <list default="true" id="74cc8e29-b266-4dbf-92ca-fbbd3c053f26" name="Changes" comment="Added creator name footer to shared base template">
+      <change afterPath="$PROJECT_DIR$/create_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/student_entry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/student_view_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,7 @@
       <list>
         <option value="Flask Main" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -62,20 +66,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Flask server.helloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Flask server.helloWorld.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.helloWorld.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Flask server.helloWorld">
+}]]></component>
+  <component name="RunManager" selected="Python.helloWorld">
     <configuration name="helloWorld" type="PythonConfigurationType" factoryName="Python">
       <module name="helloWorld" />
       <option name="ENV_FILES" value="" />
@@ -110,7 +118,7 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="~/PycharmProjects/helloWorld/.venv" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -140,7 +148,13 @@
       <workItem from="1790276295705" duration="11253000" />
       <workItem from="1791351513295" duration="2378000" />
       <workItem from="1791487045304" duration="1159000" />
-      <workItem from="1791488642582" duration="6685000" />
+      <workItem from="1791488642582" duration="9963000" />
+      <workItem from="1792613706766" duration="614000" />
+      <workItem from="1792615217977" duration="5417000" />
+      <workItem from="1792681861505" duration="18000" />
+      <workItem from="1792681890788" duration="6312000" />
+      <workItem from="1793245494279" duration="30000" />
+      <workItem from="1793245525928" duration="2313000" />
     </task>
     <task id="LOCAL-00001" summary="HTML page for &quot;About Me&quot; page. First version">
       <option name="closed" value="true" />
@@ -230,7 +244,31 @@
       <option name="project" value="LOCAL" />
       <updated>1790294016696</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add CSS about page">
+      <option name="closed" value="true" />
+      <created>1791496653505</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1791496653505</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added favorite course and contact routes, Bootstrap forms, and shared template inheritance">
+      <option name="closed" value="true" />
+      <created>1792688364709</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1792688364709</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added creator name footer to shared base template">
+      <option name="closed" value="true" />
+      <created>1792692845839</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1792692845839</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,9 +283,12 @@
     <MESSAGE value="changes for rename the render_template argument to 'about.html'" />
     <MESSAGE value="re-routing pushes to github" />
     <MESSAGE value="changed table formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed table formatting" />
+    <MESSAGE value="Add CSS about page" />
+    <MESSAGE value="Added favorite course and contact routes, Bootstrap forms, and shared template inheritance" />
+    <MESSAGE value="Added creator name footer to shared base template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added creator name footer to shared base template" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/helloWorld$helloWorld.coverage" NAME="helloWorld Coverage Results" MODIFIED="1791496168491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/helloWorld$helloWorld.coverage" NAME="helloWorld Coverage Results" MODIFIED="1793246197981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
