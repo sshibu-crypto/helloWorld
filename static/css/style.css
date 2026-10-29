@@ -1,49 +1,176 @@
-/* Set the font for the entire webpage */
+
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
-}
-/* General paragraph styling */
-p {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    background-color: #f4f7fb;
+    color: #243247;
     line-height: 1.6;
-    margin-bottom: 15px;
 }
 
-/* Level two heading styling */
+/* Main headings */
+h1 {
+    color: #17365d;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 24px 0 20px;
+}
+
 h2 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: #17365d;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
-/* Table styling */
+/* Navigation */
+.navbar {
+    background-color: #17365d !important;
+    box-shadow: 0 2px 8px rgba(23, 54, 93, 0.12);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #b9d7ff !important;
+}
+
+/* Main content spacing */
+.container {
+    padding-top: 20px;
+    padding-bottom: 36px;
+}
+
+/* Student tables */
 table {
-    border: 2px solid black;
-    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e1e8f0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(28, 48, 74, 0.06);
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 8px;
+th,
+td {
+    border: none !important;
+    border-bottom: 1px solid #e8edf4 !important;
+    padding: 14px 16px !important;
+    text-align: left;
+    vertical-align: middle;
 }
 
-/* Special styling for the third paragraph */
-p#special {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-left: 4px solid black;
+th {
+    background-color: #eaf1fb !important;
+    color: #17365d;
+    font-weight: 700;
 }
 
-/* Class-based rule */
-.highlight {
-    font-weight: bold;
+tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+tbody tr:hover {
+    background-color: #edf4ff;
+}
+
+tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+/* Links */
+a {
+    color: #1769c2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #104b91;
     text-decoration: underline;
 }
 
-/* Logo styling */
-img.logo {
-    width: 267px;
-    height: 72px;
+/* Buttons */
+.btn {
+    border-radius: 7px;
+    padding: 9px 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #1769c2;
+    border-color: #1769c2;
+}
+
+.btn-primary:hover {
+    background-color: #104b91;
+    border-color: #104b91;
+    box-shadow: 0 3px 8px rgba(23, 105, 194, 0.2);
+}
+
+.btn-secondary {
+    background-color: #64748b;
+    border-color: #64748b;
+}
+
+/* Form fields */
+.form-control,
+.form-select {
+    border: 1px solid #d5deea;
+    border-radius: 7px;
+    padding: 10px 12px;
+    background-color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #1769c2;
+    box-shadow: 0 0 0 3px rgba(23, 105, 194, 0.13);
+}
+
+.form-label {
+    color: #33445c;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 8px;
+    padding: 14px 18px;
+}
+
+/* Student details and content cards */
+.card {
+    border: 1px solid #e3eaf3;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(28, 48, 74, 0.06);
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 10px !important;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

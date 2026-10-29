@@ -86,7 +86,7 @@ def student_edit(student_id):
             student.last_name = request.form['last_name']
             student.email = request.form['email']
             student.major_id = request.form['major_id']
-            student.birthdate = dt.strptime(request.form['birth_date'], '%Y-%m-%d')
+            student.birth_date = dt.strptime(request.form['birth_date'], '%Y-%m-%d')
             student.num_credits_completed = request.form['num_credits_completed']
             student.gpa = request.form['gpa']
             student.is_honors = True if 'is_honors' in request.form else False
